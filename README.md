@@ -1,2 +1,1 @@
-# htmlacademy_learn
-HTML-Academy learn project
+# HTML-Academy learn project
