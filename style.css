@@ -1,4 +1,5 @@
 body {
+    min-width: 1040px;
     margin: 0;
     padding: 0;
     font-size: 18px;
@@ -8,21 +9,51 @@ body {
     background-color: white;
 }
 
+.container {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .page-header {
+    min-height: 490px;
+    padding-top: 35px;
     background-image: url("img/header-bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
+
+
 .page-header,
 .page-footer {
-    padding: 10px;
     background-color: #363636;
     color: #c3c3c3;
 }
 
+.header-top {
+    margin-bottom: 125px;
+}
+
+
+.header-logo {
+    float: left;
+    width: 205px;
+    height: 55px;
+}
+
 .main-nav {
+    float: left;
+    width: 520px;
+    margin: 0;
+    margin-left: 125px;
+    padding: 0;
     list-style: none;
     
 }
@@ -58,6 +89,10 @@ body {
     color: rgba(141, 116, 90, 0.3);
 }
 
+.btn-quick-order{
+    float:right;
+}
+
 .promo {
     font-weight: bold;
     font-size: 45px;
@@ -71,18 +106,29 @@ body {
     text-decoration: none;
 }
 
+.features {
+    padding-top: 50px;
+    padding-bottom: 55px;
+}
+
 .features ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .feature-item {
     padding-top: 90px;
     text-align: center;
     border-left: 1px solid #d9d9d9;
+    float:left;
+    width:279px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .feature-item:first-child {
-    border-left: none;
+    border-left-color: transparent;
 }
 
 .feature-choice {
@@ -123,9 +169,24 @@ body {
     color: #a38b70;
 }
 
+.cat-reference dl {
+    width: 820px;
+}
+
+.cat-reference dt {
+    margin: 0;
+    margin-bottom: 10px;
+}
+ 
 .cat-reference dd {
+    margin: 0;
     font-size: 16px;
 }
+
+.cat-reference dd + dt {
+    margin-top: 70px;
+}
+
 
 .cat-reference dd img {
     border-radius: 5px;
@@ -153,7 +214,17 @@ body {
     color: rgba(141, 116, 90, 0.3);
 }
 
+.reviews {
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
 .review-item {
+    float: left;
+    width: 377px;
+    margin: 0;
+    margin-right: 80px;
+    padding: 0;
+    padding-left: 50px;
     font-size: 16px;
     border-left: 3px solid #a38b70;
 }
@@ -165,11 +236,31 @@ body {
 
 .popular-and-price {
     background-color: #f2f2f2;
+    padding-top: 70px;
+    padding-bottom: 90px;
 }
 
+.popular-items {
+    margin-bottom: 50px;
+}
+
+
 .catalog-item {
+    float: left;
+    width: 308px;
+    margin-right: 48px;
     font-size: 16px;
 }
+
+.catalog-item:last-child {
+    margin-right: 0;
+}
+
+.catalog-item img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 .catalog-item h3 {
     font-size: 16px;
@@ -205,6 +296,11 @@ body {
 .price-list .price-name {
     font-weight: bold;
     color: #000000;
+}
+
+.feedback {
+    padding-top: 60px;
+    padding-bottom: 70px;
 }
 
 .feedback-tip {
@@ -252,12 +348,34 @@ body {
 }
 
 .page-footer {
-    margin-top: 20px;
+    padding-top: 45px;
+    padding-bottom: 50px;
+}
+
+.footer-top {
+    margin-bottom: 45px;
+}
+
+.footer-logo {
+    float: left;
+    width: 205px;
+    height: 55px;
+}
+
+.footer-middle {
+    margin-bottom: 50px;
+    padding-top: 50px;
 }
 
 .footer-middle,
 .footer-bottom {
   border-top: 1px solid #5e5e5e;
+}
+
+.footer-menu {
+    float: left;
+    width: 150px;
+    margin-right: 20px;
 }
 
 .footer-menu h3 {
@@ -285,6 +403,15 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
+.footer-bottom {
+    padding-top: 50px;
+}
+
+.footer-social {
+    float: left;
+    width: 490px;
+}
+
 .footer-social b {
     font-size: 24px;
     font-family: "Georgia", serif;
@@ -296,6 +423,8 @@ body {
 }
 
 .footer-copyright {
+    float: right;
+    width: 236px;
     color: #ffffff;
     text-transform: uppercase;
 }
